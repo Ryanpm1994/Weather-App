@@ -1,0 +1,232 @@
+html {
+  background: url(./img/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+}
+body {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+i {
+  padding-right: 5px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px white inset;
+  font-size: 25px;
+}
+
+.headingContainer {
+  display: flex inline-block;
+  justify-items: center;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  display: flex inline-block;
+}
+
+/* SearchBar CSS */
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+  margin-top: 200px;
+  background-color: white;
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 25px;
+  -webkit-box-shadow: 6px 9px 5px -5px #155362;
+  -moz-box-shadow: 6px 9px 5px -5px #155362;
+  box-shadow: 3px 6px 5px -5px #155362;
+}
+
+.searchBar form {
+  display: flex;
+  flex-basis: 95%;
+  order: 2;
+}
+
+.searchBar input {
+  width: 100%;
+  height: 45px;
+  border: none;
+  background: none;
+  font-size: 25px;
+  font-weight: 100;
+  color: #5e5e5e;
+  justify-self: self-start;
+}
+
+.searchBar i {
+  color: #bdbdbd;
+}
+
+.searchBar input::placeholder {
+  color: #bdbdbd;
+  font-weight: 100;
+}
+
+.searchBar input:focus {
+  outline: none;
+}
+.searchBar input:focus + .searchIcon {
+  color: #5e5e5e;
+}
+
+.searchHome:hover {
+  cursor: pointer;
+  color: #5e5e5e;
+}
+
+.searchHome {
+  order: 3;
+  font-size: 20px;
+  justify-content: right;
+}
+
+.searchIcon {
+  order: 1;
+}
+
+/* LocationHeading CSS */
+
+.localHeadingContainer {
+  display: flex block;
+  align-items: center;
+  justify-content: left;
+  margin-top: 100px;
+  margin-left: 30px;
+}
+
+.localHeadingContainer h1 {
+  font-size: 70px;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.localHeadingContainer h2 {
+  font-size: 30px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+/* FirstSection CSS */
+
+.firstSectionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+/* Current Weather CSS */
+
+.currentWeatherContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
+}
+
+.currentWeatherContainer i {
+  font-size: 150px;
+}
+
+.currentWeatherText {
+  display: block;
+  padding-left: 20px;
+}
+
+.currentTemp {
+  font-size: 125px;
+  margin: 0;
+  font-weight: 200;
+}
+
+.currentCondition {
+  font-size: 25px;
+  margin: 0;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+/* General Info CSS */
+
+.generalInfoContainer {
+  display: table;
+  background-color: rgba(239, 239, 239, 0.33);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
+  margin: 0 20px 0 20px;
+  border-radius: 5px;
+}
+
+.generalInfoContainer tr {
+  flex-wrap: wrap;
+  flex: 2;
+}
+
+.mainText {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.subText {
+  font-weight: 400;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+/* Forecast CSS */
+
+.forecastContainer {
+  display: flex block;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 0 0 40px;
+  flex-basis: 90%;
+}
+
+.forecastContainer h2 {
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.forecastCard {
+  background-color: rgba(239, 239, 239, 0.33);
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  padding: 2px 5px 2px 5px;
+  margin: 10px 5px 0 5px;
+  border-radius: 5px;
+}
+
+.forecast div {
+  margin: 0;
+  display: inline;
+}
