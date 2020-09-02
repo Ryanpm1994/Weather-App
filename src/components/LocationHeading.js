@@ -5,7 +5,7 @@ const LocationHeading = ({ searchCity, searchCountry, currentDate }) => {
     <Fragment>
       <div className="localHeadingContainer">
         <h1>
-          {searchCity}, {searchCountry}
+          {searchCity} {searchCountry}
         </h1>
         <h2>{currentDate}</h2>
       </div>

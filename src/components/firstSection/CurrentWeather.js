@@ -6,7 +6,7 @@ const CurrentWeather = ({ searchTemp, searchWeather }) => {
       <div className="currentWeatherContainer">
         <i className="fas fa-cloud"></i>
         <div className="currentWeatherText">
-          <h1 className="currentTemp">{searchTemp}</h1>
+          <h1 className="currentTemp">{searchTemp}°</h1>
           <h2 className="currentCondition">{searchWeather}</h2>
         </div>
       </div>

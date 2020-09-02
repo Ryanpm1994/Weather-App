@@ -7,6 +7,10 @@ const FirstSection = ({
   searchWeather,
   searchTempMax,
   searchTempMin,
+  windSpeed,
+  humidity,
+  sunrise,
+  sunset,
 }) => {
   return (
     <Fragment>
@@ -15,6 +19,10 @@ const FirstSection = ({
         <GeneralInfo
           searchTempMax={searchTempMax}
           searchTempMin={searchTempMin}
+          windSpeed={windSpeed}
+          humidity={humidity}
+          sunrise={sunrise}
+          sunset={sunset}
         />
       </div>
     </Fragment>

@@ -1,6 +1,13 @@
 import React, { Fragment } from "react";
 
-const GeneralInfo = ({ searchTempMax, searchTempMin }) => {
+const GeneralInfo = ({
+  searchTempMax,
+  searchTempMin,
+  windSpeed,
+  humidity,
+  sunrise,
+  sunset,
+}) => {
   return (
     <Fragment>
       <table className="generalInfoContainer">
@@ -11,11 +18,11 @@ const GeneralInfo = ({ searchTempMax, searchTempMin }) => {
               <p className="subText">Hight</p>
             </td>
             <td>
-              <p className="mainText">3.1mph</p>
+              <p className="mainText">{windSpeed} mph</p>
               <p className="subText">Wind</p>
             </td>
             <td>
-              <p className="mainText">6:40</p>
+              <p className="mainText">{sunrise}</p>
               <p className="subText">Sunrise</p>
             </td>
           </tr>
@@ -25,11 +32,11 @@ const GeneralInfo = ({ searchTempMax, searchTempMin }) => {
               <p className="subText">Low</p>
             </td>
             <td>
-              <p className="mainText">70%</p>
-              <p className="subText">Rain</p>
+              <p className="mainText">{humidity}%</p>
+              <p className="subText">Humidity</p>
             </td>
             <td>
-              <p className="mainText">7:19</p>
+              <p className="mainText">{sunset}</p>
               <p className="subText">Sunset</p>
             </td>
           </tr>

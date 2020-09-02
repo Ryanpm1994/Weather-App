@@ -15,7 +15,7 @@ const SearchBar = ({ city, setCity, onSubmit }) => {
               onChange={(event) => setCity(event.target.value)}
             ></input>
           </form>
-          <i className="fas fa-home searchHome"></i>
+          <i className="fas fa-location-arrow searchHome"></i>
           <i className="fas fa-search searchIcon"></i>
         </div>
       </div>
